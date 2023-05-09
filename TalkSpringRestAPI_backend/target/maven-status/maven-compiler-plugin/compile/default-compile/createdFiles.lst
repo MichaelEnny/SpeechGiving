@@ -1,0 +1,5 @@
+com\example\demo\models\Talk.class
+com\example\demo\controllers\TalkController.class
+com\example\demo\TalkApplication.class
+com\example\demo\repos\TalkRepo.class
+com\example\demo\services\TalkService.class

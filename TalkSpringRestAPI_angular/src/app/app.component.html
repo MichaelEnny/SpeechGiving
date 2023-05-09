@@ -1,0 +1,30 @@
+<!--This is the Header section-->
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="talks" routerLinkActive="active" class="nav-link">Talk List</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="create-talk" routerLinkActive="active" class="nav-link">Add Talk</a>
+    </li>
+  </ul>
+</nav>
+
+<!--End of Header-->
+
+<h1 class="text-center"> {{title}} </h1>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!--This is the Footer section-->
+<footer class="footer">
+  <div class="container">
+    <span>
+      All rights reserved 2023 @MichaelJavaFrontend
+    </span>
+  </div>
+</footer>
+<!--End of Footer-->

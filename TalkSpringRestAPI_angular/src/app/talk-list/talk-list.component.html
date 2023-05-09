@@ -1,0 +1,25 @@
+<h2>Talk List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Duration</th>
+            <th> Name</th>
+            <th> Speaker</th>
+            <th> Venue</th>
+            <th> Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let talk of talks">
+            <td> {{ talk.duration }} </td>
+            <td> {{ talk.name }} </td>
+            <td> {{ talk.speaker }} </td>
+            <td> {{ talk.venue }} </td>
+            <td>
+                <button (click) = "updateTalk(talk.id)" class="btn btn-info">Update</button>
+                <button (click) = "deleteTalk(talk.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+                <button (click) = "talkDetails(talk.id)" class="btn btn-info" style="margin-left: 10px">View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
